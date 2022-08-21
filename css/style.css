@@ -228,7 +228,7 @@ img{
 .post{
     border: solid 1px whitesmoke;
     border-radius: 8px;
-    width: 42vw;
+    width: 40vw;
 }
 
 .create-post{
@@ -241,18 +241,19 @@ img{
 
 #create-post{
     border: solid 2px #FF151F;
-    width: 15vw;
+    width: 26vw;
+    height: 2.5vw;
     color: #fbfbfb;
 }
 
-/*--------- Feeds ---------*/
+/*----------------- Feeds ---------------*/
 .feed{
-    border-radius: 2rem;
+    border-radius: 0.3rem;
     margin:1rem 0;
     font-size: 0.85 rem;
     line-height: 1.5;
-    border: solid 2px whitesmoke;
-    border-radius: 5px;
+    border: solid 1px whitesmoke;
+    /* border-radius: 3px; */
 }
 
 .head{
@@ -266,7 +267,7 @@ img{
 }
 
 .photo{
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     overflow: hidden;
     margin: 0.7rem 0;
 }
@@ -305,8 +306,107 @@ img{
 /*------------------ Right Side -------------------*/
 .right{
     color: #b00e15;
-    border: solid 2px red;
-    max-width: 20vw;
+    border: solid 1px whitesmoke;
+    max-width: 25vw;
     margin-right: 5px;
+    position: sticky;
+    top: -18rem;
+    bottom: 0;
+    height: fit-content;
+}
 
+.messages{
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.messages i{
+    font-size: 1.4rem;
+}
+
+.search-bar{
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.category{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.category h6{
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px solid whitesmoke;
+    padding-bottom: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.active{
+    border-color: darkred;
+}
+
+.message{
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    align-items: flex-start;
+}
+
+.message:last-child{
+    margin: 0;
+}
+
+.message p{
+    font-size: 0.8rem;
+}
+
+.profile-photo{
+    position: relative;
+    overflow: visible;
+}
+
+.profile-photo img{
+    border-radius: 50%;
+}
+
+.message-request{
+    color: aqua;
+}
+
+/*------------- Friend Request -------------*/
+.friend-request{
+    margin-top: 1rem;
+}
+
+.friend-request h4{
+    color: grey;
+    margin-bottom: 1rem;
+}
+
+.request{
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-bottom: -1.3rem;
+}
+
+
+.info{
+    display: flex;
+    gap:1rem;
+    margin-bottom: 1rem;
+}
+
+.request .action{
+    display: flex;
+    gap: 1rem;
 }
