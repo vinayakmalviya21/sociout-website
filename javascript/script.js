@@ -1,39 +1,56 @@
 /*-------------- Sidebar ---------------*/
-
 const menuItems = document.querySelectorAll('.menu-item');
 
 /*-------------- Messages ---------------*/
 
 const messagesNotification = document.querySelector('#messages-notification');
 const messages = document.querySelector('.messages')
+const nav = document.querySelector('.container')
 
-// remove active class from all menu items
 
-const changeActiveItem = () => {
-    menuItems.forEach(item => {
-         item.classList.remove('active');
-    })
-} 
 
-menuItems.forEach(item => {
-    item.addEventListener('click', () => {
-        changeActiveItem();
-        item.classList.add('active');
-        if(item.id != 'notification'){
-            document.querySelector('.notification-popup').style.display='none';
-        }else{
-            document.querySelector('.notification-popup').style.display='block';
-            document.querySelector('#notification .notification-count').style.display='none';
-        }
-    })
-})
 
 /*-------------- Messages ---------------*/
 messagesNotification.addEventListener('click', () => {
-    messages.style.boxShadow = '0 0 0.5rem red';
+    messages.style.border = 'solid 5px red';
     setTimeout(() => {
-        messages.style.boxShadow = 'none';
+        messages.style.border = 'none';
     }, 2000);
 })
 
+
+function changeBG(color) {
+    document.body.style.backgroundColor = color ;
+    nav.style.backgroundColor = color ;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// // Background-changes
+// const theme = document.querySelector('#theme');
+// const themeModal = document.querySelector('.customize-theme');
+// var root = documnet.querySelector(':root');
+// const Bg1 = document.querySelector('.bg-1');
+// const Bg2 = document.querySelector('.bg-2');
+
+// // Theme Background values
+// let bgcolor;
+
+// Bg1.addEventListener('click', () => {
+//   // bgcolor = ;
+//     // Bg2.classList.add('active');
+//     // Bg1.classList.remove('active');
+//     // changeBG();
+// })
 

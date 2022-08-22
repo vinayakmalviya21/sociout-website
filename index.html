@@ -34,7 +34,7 @@
                 <input type="search" placeholder="Search for peoples and projects">
             </div>
             <div class="create">
-                <label class="btn " for="Create post">Create</label>
+                <label class="btn " for="Create post" onclick="window.location.href='index3.html';">New Login</label>
                 <div class="profile-picture">
                     <img src="images/profile-pic1.png" alt="Error">
                 </div>
@@ -55,7 +55,7 @@
             <div class="left mt-3">
                 <div class="profile d-flex flex-direction-row">
                     <div class="profile-picture mt-3 ms-3">
-                        <img src="images/profile-pic1.png" alt="error">
+                        <img class="left-img" src="images/profile-pic1.png" alt="error">
                     </div>
                     <div class="handle d-flex flex-direction-row mt-2 me-1">
                         <span>
@@ -67,7 +67,7 @@
                 <!------------ Sidebar Start -------------->
 
                 <div class="sidebar">
-                    <div class="menu-item mt-3">
+                    <div class="menu-item mt-3" onclick="window.location.href='index.html';">
                         <span><i class="uil uil-home"></i></span>
                         <h5 class="ms-3">Home</h5>
                     </div>
@@ -77,73 +77,30 @@
                         <h5 class="ms-3">Explore</h5>
                     </div>
 
-                    <div class="menu-item" id="messages-notification">
+                    <div class="menu-item" id="messages-notification" onclick="window.location.href='index2.html';">
                         <span><i class="uil uil-envelope-alt"><small class="notification-count">2</small></i></span>
                         <h5 class="ms-3">Messages</h5>
                     </div>
 
 
-                    <div class="menu-item" id="notification">
+                    <div class="menu-item" id="notification" onclick="window.location.href='index1.html';">
                         <span><i class="uil uil-bell"><small class="notification-count">5</small></i></span>
-                        <h5 class="ms-3">Notifications</h5>
-
-                        <!---------- Notification Popup Start ------------->
-
-                        <div class="notification-popup">
-                            <div>
-                                <div class="profile-picture">
-                                    <img src="images/profile-pic2.png" alt="Error">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Varun Singh</b> accepted your friend request<small class="text-secondary">2 days
-                                        ago</small>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="profile-picture">
-                                    <img src="images/profile-pic3.png" alt="Error">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Arun Sharma</b> commented on your post<small class="text-secondary">4 days
-                                        ago</small>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="profile-picture">
-                                    <img src="images/profile-pic-girl1.png" alt="Error">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Sneha Mittal</b> liked your post<small class="text-secondary">5 days ago</small>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="profile-picture">
-                                    <img src="images/profile-pic-girl2.png" alt="Error">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Parul Mishra</b> commented on your post<small class="text-secondary">3 days
-                                        ago</small>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="profile-picture">
-                                    <img src="images/profile-pic-girl3.png" alt="Error">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Priti Chopra</b> liked your post you are tagged in.<small
-                                        class="text-secondary">7
-                                        days ago</small>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!---------- Notification Popup Ends ------------->
+                        <h5 class="ms-3">Notifications </h5>
 
                     </div>
+                
+                <!------------ Theme Customization ---------->
+                    
+                    <div class="menu-item theme" id="theme">
+                            <span><i class="uil uil-palette"></i></span>
+                            <h5 class="ms-3">Theme</h5>
+                        </div>    
+                            <div id="color-switcher">
+                                <span class="switch" id="dark" onclick="changeBG('black')"></span>
+                                <span class="switch" id="light" onclick="changeBG('white')"></span>
+                        </div>
+
+
 
                     <div class="menu-item">
                         <span><i class="uil uil-setting"></i></span>
@@ -220,7 +177,7 @@
                             <div class="head">
                                 <div class="user">
                                     <div class="profile-photo ms-3 mt-2">
-                                        <img src="images/profile-pic3.png">
+                                        <img src="images/profile-pic3.png" alt="Error">
                                     </div>
                                     <div class="info ms-2 mt-2">
                                         <h5>Arun Sharma</h5>
@@ -232,7 +189,7 @@
                                 </span>
                             </div>
 
-                            <div class="photo">
+                            <div class="photo ms-2 me-2 mt-2 mb-2 ">
                                 <img src="images/feed-1.png" alt="error">
                             </div>
 
@@ -271,7 +228,7 @@
                         <div class="head">
                             <div class="user">
                                 <div class="profile-photo ms-3 mt-3">
-                                    <img src="images/profile-pic-girl3.png">
+                                    <img src="images/profile-pic-girl3.png" alt="Error">
                                 </div>
                                 <div class="info ms-2 mt-3">
                                     <h5>Priti Chopra</h5>
@@ -283,7 +240,7 @@
                             </span>
                         </div>
 
-                        <div class="photo">
+                        <div class="photo ms-2 me-2 mt-2 mb-2">
                             <img src="images/feed-2.png" alt="error">
                         </div>
                         <div class="action-buttons">
@@ -332,7 +289,7 @@
                             </span>
                         </div>
 
-                        <div class="photo">
+                        <div class="photo ms-2 me-2 mt-2 mb-2">
                             <img src="images/feed-3.png" alt="error">
                         </div>
 
@@ -380,7 +337,7 @@
                             </span>
                         </div>
 
-                        <div class="photo">
+                        <div class="photo ms-2 me-2 mt-2 mb-2">
                             <img src="images/feed-4.png" alt="error">
                         </div>
 
@@ -411,7 +368,10 @@
                         <div class="comments text-secondary">View all 277 commments.</div>
                     </div>
                 </div>
-
+            
+                <div class="hidden-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
 
                 <!-------------------- Feed Ends ----------------------->
             </div>
@@ -500,10 +460,10 @@
                             </div>
                         </div>
                         <div class="action d-flex position-flex-start ms-5 mt-0">
-                            <button class="btn mt-0">
+                            <button class="btn-request mt-0">
                                 Accept
                             </button>
-                            <button class="btn mt-0 ms-3">
+                            <button class="btn-request mt-0 ms-1">
                                 Decline
                             </button>
                         </div>
@@ -522,10 +482,10 @@
                             </div>
                         </div>
                         <div class="action d-flex position-flex-start ms-5 mt-0">
-                            <button class="btn mt-0">
+                            <button class="btn-request mt-0">
                                 Accept
                             </button>
-                            <button class="btn mt-0 ms-3">
+                            <button class="btn-request mt-0 ms-1">
                                 Decline
                             </button>
                         </div>
@@ -544,10 +504,10 @@
                             </div>
                         </div>
                         <div class="action d-flex position-flex-start ms-5 mt-0">
-                            <button class="btn mt-0">
+                            <button class="btn-request mt-0">
                                 Accept
                             </button>
-                            <button class="btn mt-0 ms-3">
+                            <button class="btn-request mt-0 ms-1">
                                 Decline
                             </button>
                         </div>
@@ -564,14 +524,6 @@
         </div>
     </section>
     <!------ Main Section Ends --------->
-
-    <!--------------- Contact Us section  ----------------->
-
-    <!-- <section>
-        <div class="contact-us text-secondary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempore esse facere blanditiis ipsa, unde in repellat aspernatur enim animi debitis voluptas quis rem odit illo porro ab non quas. Maxime, ipsam.
-            </div>
-    </section> -->
 
 
 
