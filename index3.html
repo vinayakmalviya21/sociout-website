@@ -23,70 +23,32 @@
 </head>
 <body>
 
-    <div class="container user-form">
+  <div class="container user-form d-flex" style="width: 700px"> 
+    <div class="illustration">
+      <img src="images/Login.png" style="max-height: 250vh; max-width: 500rem;position: relative;" alt="Error">
+    </div>
+    <div class="login" style="margin-top: 15vh; max-height: 500vh; max-width: 500rem;position: relative;">
     <h1 class="heading mt-3">Sociout</h1 class="h">
 
     <form class="row g-3 needs-validation" novalidate>
-        <!-- <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">First name</label>
-          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div> -->
-
-
-        <!-- <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Last name</label>
-          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div> -->
-
-
-        <div class="col-md-4">
+        <div class="col-md-4" style="display: block; width: max-content;">
           <label for="validationCustomUsername" class="form-label">Username</label>
           <div class="input-group has-validation">
-            <!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
             <input type="text" class="form-control username"   id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
             <div class="invalid-feedback">
-              Please choose a username.
+              Incorrect username.
             </div>
           </div>
         </div>
 
 
-        <div class="col-md-6">
+        <div class="col-md-6" style="display: block; width: max-content;">
           <label for="validationCustom03" class="form-label">Password</label>
           <input type="text" class="form-control" id="validationCustom03" required>
           <div class="invalid-feedback">
-            Please provide a valid Password.
+            Invalid Password.
           </div>
         </div>
-
-<!--         
-        <div class="col-md-3">
-          <label for="validationCustom04" class="form-label">State</label>
-          <select class="form-select" id="validationCustom04" required>
-            <option selected disabled value="">Choose...</option>
-            <option>...</option>
-          </select>
-          <div class="invalid-feedback">
-            Please select a valid state.
-          </div>
-        </div> -->
-
-
-
-        <!-- <div class="col-md-3">
-          <label for="validationCustom05" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="validationCustom05" required>
-          <div class="invalid-feedback">
-            Please provide a valid zip.
-          </div>
-        </div> -->
-
 
         <div class="col-12">
           <div class="form-check">
@@ -103,7 +65,7 @@
           <button class="btn btn-primary"  type="submit">Submit form</button>
         </div>
       </form>
-
+    </div>
     </div>
 
     <script>
@@ -130,10 +92,6 @@
 
     </script>
 
-  
-
-
-
 
        <!------------- Bootstrap link ----------------->
 
@@ -152,3 +110,30 @@
 
 </body>
 </html>
+
+
+<!-- Css Style -->
+<style>
+@media  (max-width:767px) {
+    .container{
+      flex-direction: column;
+      width: 500px !important;
+    }
+    .illustration{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .illustration img{
+      width: 250px !important;
+    }
+    .login{
+      margin-top: 0px !important;
+    }
+  
+
+}
+
+
+
+</style>

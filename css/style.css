@@ -172,29 +172,33 @@ img{
 /*---------- Notification Popup -----------*/
 
 .notification-popup{
-     margin-top: 10vh;
-     max-width: 50rem;
+     margin-top: 15vh;
+     max-width: 90rem;
      background-color: var(--white);
      border: solid 3px  var(--light-red);
      border-radius: 0.5rem; ;
-     
 }
 
 .notification-popup > div{
     display: flex;
-    align-items: start;
-    gap: 0.5rem;
-    margin-bottom: 0.1rem;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .notification-popup small{
-    display: block;
+    display: flex;
+    
 }
 
 /*--------------- Theme Customization -------------*/
 .menu-item .theme{
-     color: #FF151F;
+    color: #FF151F;
 }
+
 .switch{
     width: 30px;
     height: 30px;
