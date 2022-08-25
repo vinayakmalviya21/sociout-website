@@ -3,6 +3,7 @@
 
 :root{
 --black: #121212;
+/* --gradient: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(32,28,28,1) 56%, rgba(18,18,18,1) 92%); */
 --white: whitesmoke;
 --light-white:#fbfbfb;
 --grey: grey;
@@ -152,7 +153,7 @@ img{
     position: relative;
 }
 
-.notification-count{
+/* .notification-count{
     border: 1.5px solid var(--light-red);
     border-radius: 10px;
     color: var(--grey);
@@ -162,7 +163,7 @@ img{
     position: absolute;
     top: -0.1rem;
     right: 8.1 rem;
-}
+} */
 
 .sidebar h3{
     margin-left: 1.5rem;
@@ -172,9 +173,9 @@ img{
 /*---------- Notification Popup -----------*/
 
 .notification-popup{
-     margin-top: 15vh;
+     margin-top: 4vh;
      max-width: 90rem;
-     background-color: var(--white);
+     /* background-color: var(--white); */
      border: solid 3px  var(--light-red);
      border-radius: 0.5rem; ;
 }
@@ -234,12 +235,31 @@ img{
     overflow: hidden;
     border: solid 1px var(--grey);
     border-radius: 8px;
+    /* max-width: 97vh; */
 }
 
-.story:hover{
-    border:solid 2px var(--grey);
-    border-radius: 5px;
+.story .profile-photo{
+   border:solid 3px darkred;
+    border-radius: 50%;
 }
+
+.story .profile-photo:hover{
+    border:solid 2px var(--dark-red);
+    border-radius: 50%;
+}
+
+/* .profile-photo :hover{
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+} */
 
 .profile-photo{
     width: 2.7rem;
@@ -251,7 +271,7 @@ img{
 .post{
     border: solid 1px var(--grey);
     border-radius: 8px;
-    width: 97vh;
+    /* width: 94vh; */
 }
 
 .create-post{
@@ -287,12 +307,14 @@ img{
 }
 
 .feed-whole{
-    margin:auto;
+    /* margin:auto; */
     margin-top: 0.5rem;
+    margin-left: 1rem;
     font-size: 0.85 rem;
     line-height: 1.5;
     border: solid 1px var(--grey);
     border-radius: 0.3rem;
+    max-width: 94vh;
 }
 
 .like:hover{
@@ -398,13 +420,13 @@ img{
 .category h6{
     width: 100%;
     text-align: center;
-    border-bottom: 4px solid var(--white);
+    border-bottom: 4px solid var(--grey);
     padding-bottom: 0.5rem;
     font-size: 0.85rem;
 }
 
 .category h6:hover{
-    border-bottom: 4px solid darkblue;
+    border-bottom: 4px solid red;
 }
 
 .active{
@@ -486,7 +508,7 @@ img{
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 10vh;
-    border: solid 1px grey;
+    /* border: solid 1px grey; */
 }
 
 .user-form h1{
@@ -500,7 +522,7 @@ img{
     flex-direction: row;
     justify-content: center;
     text-align: center; 
-    margin-top: 2rem;
+    margin-top: -1rem;
     margin-bottom: 2rem;
     margin-right: 2rem;
 }
@@ -524,6 +546,12 @@ img{
     #messages-notification h5,
     #notification h5{
         font-size: small;
+    }
+}
+
+@media screen and (max-width:1390px) {
+    .btn-request{
+        display: none;
     }
 }
 
@@ -553,7 +581,6 @@ img{
     .whole-request h5{
         font-size: medium;
     }
-
 }
 
 @media (max-width:1050px) and (min-width:850px) {
@@ -573,8 +600,16 @@ img{
     .messages .search-bar{
         display: none;
     }
+    .profile{
+        visibility: hidden;
+    }
 }
 
+@media screen and (max-width:912px) {
+    .post{
+        display: none;
+    }
+}
 @media (max-width:850px) and (min-width:690px) {
     .menu-item h5{
         display: none;
@@ -592,6 +627,9 @@ img{
     }
     .post,.search-bar{
         display: none;
+    }
+    .profile{
+        visibility: hidden;
     }
 }
 
@@ -612,6 +650,9 @@ img{
     }
     .post,.search-bar{
         display: none;
+    }
+    .profile{
+        visibility: hidden;
     }
 }
 
@@ -635,6 +676,9 @@ img{
     }
     .feed-whole small{
         display: none;
+    }
+    .profile{
+        visibility: hidden;
     }
 }
 
@@ -661,5 +705,8 @@ img{
     }
     .feed-whole h5{
         font-size: medium;
+    }
+    .profile{
+        visibility: hidden;
     }
 }

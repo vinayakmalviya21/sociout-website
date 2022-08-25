@@ -25,10 +25,10 @@
 
   <div class="container user-form d-flex" style="width: 700px"> 
     <div class="illustration">
-      <img src="images/Login.png" style="max-height: 250vh; max-width: 500rem;position: relative;" alt="Error">
+      <img src="images/Login.png" style="margin-top:3vh; max-height: 300vh; max-width: 500rem; position: relative;" alt="Error">
     </div>
-    <div class="login" style="margin-top: 15vh; max-height: 500vh; max-width: 500rem;position: relative;">
-    <h1 class="heading mt-3">Sociout</h1 class="h">
+    <div class="login" style=" max-height: 500vh; max-width: 500rem; position: relative;">
+    <h1 class="heading mt-5">Sociout</h1 class="h">
 
     <form class="row g-3 needs-validation" novalidate>
         <div class="col-md-4" style="display: block; width: max-content;">
@@ -62,7 +62,7 @@
           </div>
         </div>
         <div class="col-12">
-          <button class="btn btn-primary"  type="submit">Submit form</button>
+          <button class="btn"  type="submit">Submit form</button>
         </div>
       </form>
     </div>
@@ -114,7 +114,20 @@
 
 <!-- Css Style -->
 <style>
-@media  (max-width:767px) {
+
+.form-label {
+    margin-bottom: 0.5rem;
+    margin-left: -135px;
+}
+
+.form-check {
+    display: inline-block;
+    padding-left: 5.5em;
+    margin-bottom: 0.125rem;
+    margin-left: -46px;
+}
+
+@media  (max-width:768px) {
     .container{
       flex-direction: column;
       width: 500px !important;
